@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* TÂY TIẾN — TYPOGRAPHY HOTFIX
+   One authoritative global stylesheet. Prevent justified text from expanding
+   Vietnamese word spaces and force a reliable Windows Vietnamese font stack. */
+:root {
+  --tt-ink: #241d17;
+  --tt-brown: #715238;
+  --tt-rust: #963f2d;
+  --tt-paper: #efe5d2;
+  --tt-paper-light: #f7f1e6;
+  --tt-muted: #796b5b;
+  --tt-olive: #536044;
+  --tt-font: Arial, "Segoe UI", Tahoma, sans-serif;
+}
+
+html, body, #app,
+.slidev-layout, .slidev-page, .slidev-page-content {
+  font-family: var(--tt-font) !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+  text-align: left !important;
+}
+
+.tt-slide,
+.tt-slide * {
+  box-sizing: border-box;
+  font-family: var(--tt-font) !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+  font-kerning: none !important;
+  font-variant-ligatures: none !important;
+  text-align: left !important;
+  text-justify: none !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+.tt-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 3.7% 5% 3.1%;
+  color: var(--tt-ink);
+  background:
+    linear-gradient(115deg, rgba(255,255,255,.32), transparent 36%),
+    radial-gradient(ellipse at 90% 10%, rgba(155,117,73,.15), transparent 28%),
+    radial-gradient(ellipse at 12% 95%, rgba(116,83,49,.10), transparent 28%),
+    var(--tt-paper);
+  font-size: 15px;
+  line-height: 1.38;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: auto;
+}
+
+.tt-slide p, .tt-slide li, .tt-slide blockquote,
+.tt-slide h1, .tt-slide h2, .tt-slide h3,
+.tt-slide span, .tt-slide small, .tt-slide div {
+  text-align: left !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+  white-space: normal;
+}
+
+.tt-slide h1, .tt-slide h2, .tt-slide h3 {
+  font-weight: 800;
+  line-height: 1.08;
+}
+
+.cover-slide {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  grid-template-rows: 34px minmax(0, 1fr) 24px;
+  column-gap: 4%;
+  padding: 4% 5% 3.2%;
+  background:
+    linear-gradient(90deg, rgba(239,229,210,.98) 0%, rgba(239,229,210,.96) 48%, rgba(239,229,210,.72) 100%),
+    url('/map-strip.jpg') center/cover,
+    var(--tt-paper);
+}
+.cover-topline, .cover-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--tt-brown);
+  font: 700 10px/1.2 var(--tt-font) !important;
+  letter-spacing: .08em !important;
+}
+.cover-topline { border-bottom: 1px solid rgba(113,82,56,.5); }
+.cover-copy { align-self: center; min-width: 0; max-width: 100%; padding: 0 0 14px 5px; }
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--tt-rust);
+  font: 700 10px/1.2 var(--tt-font) !important;
+  letter-spacing: .08em !important;
+}
+.cover-copy h1 {
+  margin: 0;
+  max-width: 100%;
+  white-space: normal;
+  font: 800 clamp(48px, 5.2vw, 72px)/1.02 Georgia, "Times New Roman", serif !important;
+  letter-spacing: 0 !important;
+  color: #1f1a16;
+}
+.cover-rule { width: 82%; height: 5px; margin: 22px 0 15px; border-top: 2px solid var(--tt-ink); border-bottom: 1px solid var(--tt-ink); }
+.cover-subtitle { margin: 0 0 10px; color: var(--tt-rust); font: 800 21px/1.2 var(--tt-font) !important; }
+.cover-deck { margin: 0; font: italic 19px/1.35 Georgia, "Times New Roman", serif !important; color: #4c3c2d; }
+.cover-byline { margin-top: 22px; color: var(--tt-muted); font: 700 9px/1.3 var(--tt-font) !important; letter-spacing: .08em !important; }
+.cover-visual { position: relative; align-self: center; height: 82%; min-height: 0; min-width: 0; }
+.cover-soldiers { position: absolute; inset: 12% 0 10% 0; width: 100%; height: 78%; object-fit: cover; filter: grayscale(1) sepia(.16) contrast(1.05); border: 8px solid rgba(255,255,255,.56); box-shadow: 0 18px 36px rgba(41,30,19,.24); }
+.cover-compass { position: absolute; z-index: 2; top: -4%; right: -2%; width: 31%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 5px solid #a57c3e; box-shadow: 0 9px 22px rgba(35,25,15,.3); }
+.cover-flower { position: absolute; z-index: 3; left: -3%; bottom: -1%; width: 23%; height: 23%; object-fit: cover; border-radius: 50%; mix-blend-mode: multiply; opacity: .88; box-shadow: 0 8px 18px rgba(35,25,15,.16); }
+.cover-caption { position: absolute; z-index: 3; bottom: 2%; right: 3%; padding: 8px 11px; color: #f5ead7; background: var(--tt-rust); font: 700 9px/1.2 var(--tt-font) !important; letter-spacing: .08em !important; }
+.cover-bottom { border-top: 1px solid rgba(113,82,56,.5); font-size: 9px !important; }
+
+.editorial-slide { display: flex; flex-direction: column; gap: 0; }
+.slide-head { display: flex; justify-content: space-between; align-items: center; padding-bottom: 9px; border-bottom: 1px solid rgba(36,29,23,.38); color: var(--tt-muted); font: 700 9px/1.2 var(--tt-font) !important; letter-spacing: .08em !important; }
+.section-index { color: var(--tt-rust); }
+.running-title { text-align: right !important; }
+.section-title-row { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin: 18px 0 15px; }
+.section-title-row h2, .soldier-heading h2 { margin: 0; font: 800 34px/1.08 Georgia, "Times New Roman", serif !important; letter-spacing: 0 !important; }
+.section-intro { max-width: 350px; margin: 0 0 4px; color: #665747; font: 15px/1.45 var(--tt-font) !important; }
+.author-grid { display: grid; grid-template-columns: .72fr 1.6fr; gap: 26px; flex: 1; min-height: 0; }
+.author-portrait { position: relative; min-height: 0; padding: 18px 20px 16px; color: #f5ecde; background: linear-gradient(145deg,#49372a,#241f1a); display: flex; flex-direction: column; justify-content: center; }
+.portrait-mark { width: 62px; height: 62px; border: 1px solid #c2a276; border-radius: 50%; display: grid; place-items: center; color: #d8bd91; font: italic 29px Georgia,serif !important; margin-bottom: 14px; }
+.portrait-name { margin: 0 0 7px; font: 800 19px var(--tt-font) !important; }
+.portrait-note { margin: 0; color: #d6c4aa; font: 12px/1.45 var(--tt-font) !important; }
+.portrait-line { width: 50px; border-top: 2px solid #a77a48; margin: 15px 0 10px; }
+.portrait-quote { margin: 0; color: #e9d7bc; font: italic 14px/1.4 Georgia,serif !important; }
+.timeline { display: flex; flex-direction: column; justify-content: space-around; padding: 0; min-height: 0; }
+.timeline-item { display: grid; grid-template-columns: 82px 1fr; gap: 14px; padding: 9px 0; border-bottom: 1px solid rgba(36,29,23,.2); }
+.timeline-item:last-child { border-bottom: 0; }
+.timeline-year { color: var(--tt-rust); font: 800 17px var(--tt-font) !important; }
+.timeline-item h3 { margin: 0 0 4px; font: 800 16px/1.2 var(--tt-font) !important; }
+.timeline-item p { margin: 0; color: #5f5143; font: 13px/1.4 var(--tt-font) !important; }
+.slide-foot { display: flex; justify-content: space-between; flex-shrink: 0; margin-top: auto; padding-top: 6px; border-top: 1px solid rgba(36,29,23,.24); color: #897965; font: 700 8px/1.2 var(--tt-font) !important; letter-spacing: .06em !important; }
+
+.landscape-slide { padding: 2.8% 5% 2.4%; }
+.landscape-slide .eyebrow { margin-bottom: 5px; }
+.landscape-slide h2 { margin: 0; font: 800 34px/1.04 Georgia,serif !important; }
+.landscape-slide h2 em { color: var(--tt-rust); }
+.landscape-map { position: relative; height: 132px; flex: 0 0 132px; margin: 8px 0 9px; overflow: hidden; background: linear-gradient(115deg,rgba(72,59,43,.94),rgba(97,76,53,.84)), url('/map-strip.jpg') center/cover; color: #f2e6d2; }
+.map-path { position: absolute; left: 8%; right: 8%; top: 49%; height: 3px; background: #cba36d; transform: rotate(-7deg); box-shadow: 0 0 0 6px rgba(203,163,109,.12); }
+.place { position: absolute; display: flex; flex-direction: column; gap: 4px; font: 700 11px var(--tt-font) !important; }
+.place:before { content:''; width: 8px; height: 8px; border-radius: 50%; background: #e2c18b; box-shadow: 0 0 0 5px rgba(226,193,139,.18); margin-bottom: 4px; }
+.place small { color: #d8c6aa; font: italic 11px Georgia,serif !important; }
+.place-a { left: 9%; top: 18%; }
+.place-b { left: 35%; top: 56%; }
+.place-c { left: 62%; top: 16%; }
+.place-d { right: 8%; top: 55%; }
+.map-stamp { position: absolute; right: 22px; top: 18px; padding: 7px 10px; border: 1px solid rgba(240,220,185,.45); color: #dfc69e; font: 700 9px/1.5 var(--tt-font) !important; text-align: center !important; }
+.landscape-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.landscape-card { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 10px 13px; background: rgba(255,255,255,.32); border: 1px solid rgba(89,66,44,.2); min-height: 100px; }
+.card-number { color: var(--tt-rust); font: italic 25px Georgia,serif !important; }
+.landscape-card h3 { margin: 0 0 6px; font: 800 14px/1.2 var(--tt-font) !important; }
+.landscape-card p { margin: 0 0 7px; color: #5e5144; font: 12px/1.4 var(--tt-font) !important; }
+.keyword-line { color: var(--tt-rust); font: 700 8px var(--tt-font) !important; }
+.poem-fragment { color: var(--tt-olive); font: italic 14px Georgia,serif !important; }
+
+.landscape-conclusion { margin: 7px 0 5px; padding: 6px 10px; color: #f5ead9; background: var(--tt-rust); text-align: center !important; font: 700 9px/1.25 var(--tt-font) !important; }
+
+.soldier-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin: 17px 0 13px; }
+.soldier-heading h2 { font-size: 34px !important; }
+.soldier-lead { max-width: 360px; margin: 0 0 3px; color: #665747; font: 14px/1.42 var(--tt-font) !important; }
+.soldier-body { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; min-height: 0; flex: 1; }
+.soldier-photo-wrap { position: relative; min-height: 0; background: #3b3025; padding: 8px; }
+.soldier-photo { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) sepia(.1); }
+.photo-label { position: absolute; left: 15px; bottom: 15px; padding: 6px 8px; color: #f5ebda; background: rgba(36,29,23,.8); font: 700 8px var(--tt-font) !important; }
+.soldier-triad { display: flex; flex-direction: column; justify-content: space-around; min-height: 0; }
+.trait { display: grid; grid-template-columns: 34px 1fr; gap: 11px; padding: 10px 0; border-bottom: 1px solid rgba(36,29,23,.2); }
+.trait:last-child { border-bottom: 0; }
+.trait-no { color: var(--tt-rust); font: italic 21px Georgia,serif !important; }
+.trait h3 { margin: 0 0 4px; font: 800 14px/1.2 var(--tt-font) !important; }
+.trait p { margin: 0; color: #5e5144; font: 12px/1.4 var(--tt-font) !important; }
+.soldier-bottomline { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 9px 0 7px; padding: 7px; border-top: 1px solid rgba(36,29,23,.3); border-bottom: 1px solid rgba(36,29,23,.3); color: #776653; font: italic 11px Georgia,serif !important; }
+.soldier-bottomline strong { color: var(--tt-rust); font: 800 9px var(--tt-font) !important; }
+
+.decode-slide { padding-top: 3.2%; }
+.decode-slide .eyebrow { margin-top: 13px; }
+.poem-focus { position: relative; display: flex; align-items: center; justify-content: center; gap: 15px; margin: 7px 0 13px; padding: 11px 16px; color: #f3e8d5; background: linear-gradient(100deg,#4b392b,#2c251e); }
+.quote-mark { color: #c69b65; font: 65px/.7 Georgia,serif !important; }
+.poem-lines { text-align: center !important; }
+.poem-lines p { margin: 0; text-align: center !important; font: italic 21px/1.3 Georgia,serif !important; }
+.poem-author { align-self: end; color: #d7c2a3; font: 700 8px var(--tt-font) !important; }
+.decode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+.decode-item { position: relative; padding: 9px 12px 8px 15px; border-left: 3px solid var(--tt-rust); background: rgba(255,255,255,.28); }
+.decode-tag { color: var(--tt-rust); font: 700 8px var(--tt-font) !important; }
+.decode-item h3 { margin: 4px 0; font: 800 14px/1.2 var(--tt-font) !important; }
+.decode-item p { margin: 0; color: #5e5144; font: 12px/1.38 var(--tt-font) !important; }
+.contrast-equation { display: flex; align-items: center; justify-content: center; gap: 17px; margin: 10px 0 7px; padding: 8px; color: #f5ead9; background: var(--tt-rust); font: 800 10px var(--tt-font) !important; }
+.contrast-equation b { color: #f0d5ac; font-size: 18px; }
+.decode-takeaway { margin: 0 0 5px; color: #594a3a; text-align: center !important; font: italic 12px/1.35 Georgia,serif !important; }
+
+.message-slide { background: linear-gradient(120deg,rgba(239,229,210,.96),rgba(231,216,191,.94)), url('/map-strip.jpg') center/cover; }
+.message-hero { max-width: 800px; margin: 13px auto 10px; text-align: center !important; }
+.message-hero .eyebrow { text-align: center !important; }
+.message-hero h2 { margin: 0; text-align: center !important; font: 800 32px/1.05 Georgia,serif !important; }
+.message-hero h2 em { color: var(--tt-rust); }
+.message-intro { max-width: 640px; margin: 9px auto 0; color: #675747; text-align: center !important; font: 15px/1.45 var(--tt-font) !important; }
+.values-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 13px; }
+.value-card { padding: 10px 13px; background: rgba(255,255,255,.36); border-top: 2px solid #a57a48; }
+.value-index { color: var(--tt-rust); font: italic 21px Georgia,serif !important; }
+.value-card h3 { margin: 5px 0; font: 800 11px/1.25 var(--tt-font) !important; }
+.value-card p { margin: 0; color: #675747; font: 13px/1.4 var(--tt-font) !important; }
+.reader-voice { max-width: 840px; margin: 9px auto 0; padding: 10px 20px; border-left: 3px solid #a57a48; color: #43372b; background: rgba(255,255,255,.32); font: italic 15px/1.5 Georgia,serif !important; }
+.reader-voice small { display: block; margin-top: 6px; color: var(--tt-rust); font: 700 8px var(--tt-font) !important; }
+
+.poster-page { background: #171411 !important; }
+.poster-slide { display: grid; place-items: center; padding: 0 !important; background: #171411 !important; }
+.poster-image { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+/* The poster's image is intentionally untouched by typography rules. */
+.poster-image, .poster-image * { font-family: initial !important; letter-spacing: initial !important; }
+
+
+/* FINAL VIETNAMESE FONT OVERRIDE
+   Use one Vietnamese-first family everywhere, including poem quotations.
+   This overrides earlier font shorthand declarations such as Georgia. */
+.tt-slide,
+.tt-slide *,
+.tt-slide h1,
+.tt-slide h2,
+.tt-slide h3,
+.tt-slide p,
+.tt-slide span,
+.tt-slide small,
+.tt-slide div {
+  font-family: "Be Vietnam Pro", sans-serif !important;
+  font-kerning: normal !important;
+  font-variant-ligatures: normal !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+}
+
+
+/* WEATHER ON GLASS — rain trails, soft fog and occasional distant lightning */
+.tt-slide {
+  isolation: isolate;
+  position: absolute;
+}
+
+/* Raindrops and long water trails on an imaginary window pane. */
+.tt-slide::before,
+.tt-slide::after {
+  content: "";
+  position: absolute;
+  inset: -10%;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+.tt-slide::before {
+  z-index: 2;
+  opacity: .42;
+  background-image:
+    /* Fine diagonal rain in the background */
+    repeating-linear-gradient(
+      115deg,
+      transparent 0 45px,
+      rgba(255,255,255,.52) 46px,
+      rgba(255,255,255,.52) 47px,
+      transparent 49px 96px
+    ),
+    /* Long glass trails */
+    repeating-linear-gradient(
+      91deg,
+      transparent 0 73px,
+      rgba(255,255,255,.28) 74px,
+      rgba(255,255,255,.12) 76px,
+      transparent 78px 151px
+    ),
+    /* Large droplets with a subtle highlight and shadow */
+    radial-gradient(ellipse 5px 10px at 8% 18%, rgba(238,250,255,.78) 0 24%, rgba(95,132,145,.35) 49%, transparent 74%),
+    radial-gradient(ellipse 4px 8px at 19% 63%, rgba(245,252,255,.72) 0 22%, rgba(95,132,145,.3) 52%, transparent 76%),
+    radial-gradient(ellipse 7px 13px at 36% 34%, rgba(238,250,255,.72) 0 23%, rgba(95,132,145,.3) 53%, transparent 76%),
+    radial-gradient(ellipse 4px 9px at 51% 78%, rgba(245,252,255,.7) 0 23%, rgba(95,132,145,.3) 52%, transparent 76%),
+    radial-gradient(ellipse 6px 12px at 68% 21%, rgba(245,252,255,.76) 0 23%, rgba(95,132,145,.3) 52%, transparent 76%),
+    radial-gradient(ellipse 4px 9px at 83% 57%, rgba(245,252,255,.72) 0 23%, rgba(95,132,145,.3) 52%, transparent 76%),
+    radial-gradient(ellipse 5px 11px at 94% 84%, rgba(245,252,255,.7) 0 23%, rgba(95,132,145,.3) 52%, transparent 76%);
+  background-size: 170px 170px, 230px 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  animation: tt-glass-rain 3.4s linear infinite;
+  will-change: background-position;
+}
+
+/* Cool mist moves slowly across the paper like low clouds. */
+.tt-slide::after {
+  z-index: 3;
+  opacity: .2;
+  background:
+    radial-gradient(ellipse 42% 19% at 12% 22%, rgba(208,222,222,.62), transparent 72%),
+    radial-gradient(ellipse 38% 22% at 82% 16%, rgba(216,227,226,.58), transparent 74%),
+    radial-gradient(ellipse 48% 18% at 58% 88%, rgba(199,214,215,.48), transparent 72%),
+    linear-gradient(115deg, transparent 25%, rgba(230,238,235,.12) 48%, transparent 70%);
+  filter: blur(13px);
+  animation: tt-fog-drift 17s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+
+/* Lightning is a separate, rare accent; it never blocks clicks or text. */
+.weather-lightning {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: hidden;
+}
+.weather-lightning::before {
+  content: "";
+  position: absolute;
+  top: -3%;
+  right: 19%;
+  width: 17%;
+  height: 65%;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(248,253,255,.95), rgba(204,225,235,.2));
+  clip-path: polygon(58% 0, 100% 0, 67% 39%, 85% 39%, 18% 100%, 39% 52%, 20% 52%);
+  filter: drop-shadow(0 0 12px rgba(220,240,255,.9));
+  animation: tt-lightning-bolt 23s linear infinite;
+}
+.weather-lightning::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: rgba(222,237,245,.16);
+  animation: tt-lightning-flash 23s linear infinite;
+}
+.tt-slide > *:not(.weather-lightning) {
+  position: relative;
+  z-index: 4;
+}
+@keyframes tt-glass-rain {
+  from {
+    background-position: 0 -170px, 0 -35px, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  }
+  to {
+    background-position: -170px 0, 0 35px, 0 16px, 0 -12px, 0 19px, 0 -14px, 0 17px, 0 -10px, 0 14px;
+  }
+}
+@keyframes tt-fog-drift {
+  0%   { transform: translate3d(-2%, 1%, 0) scale(1); opacity: .13; }
+  50%  { transform: translate3d(1%, -1%, 0) scale(1.04); opacity: .23; }
+  100% { transform: translate3d(3%, 1%, 0) scale(1.02); opacity: .17; }
+}
+/* Two quick distant flashes late in the cycle, then a long quiet interval. */
+@keyframes tt-lightning-bolt {
+  0%, 82%, 83.1%, 84%, 100% { opacity: 0; }
+  82.2% { opacity: .92; }
+  82.45% { opacity: .08; }
+  82.8% { opacity: .78; }
+  83.0% { opacity: 0; }
+}
+@keyframes tt-lightning-flash {
+  0%, 82%, 83.1%, 84%, 100% { opacity: 0; }
+  82.2% { opacity: .16; }
+  82.45% { opacity: .025; }
+  82.8% { opacity: .12; }
+  83.0% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tt-slide::before, .tt-slide::after,
+  .weather-lightning::before, .weather-lightning::after {
+    animation: none !important;
+  }
+}
