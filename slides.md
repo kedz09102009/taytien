@@ -30,7 +30,7 @@ mdc: true
     <div class="cover-caption">DẤU CHÂN TRÊN MIỀN TÂY</div>
   </div>
   <div class="cover-bottom">
-    <span>NHÓM THỰC HIỆN · PHAN HỒ KIỆT VÀ TRANG LY</span>
+    <span>NHÓM THỰC HIỆN · PHAN HỒ KIỆT VÀ HỒ NGUYỄN TRANG LY</span>
     <span>01 / 07</span>
   </div>
 </div>
