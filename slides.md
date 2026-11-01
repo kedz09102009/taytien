@@ -11,9 +11,6 @@ mdc: true
 ---
 
 <div class="tt-slide cover-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div>
   <div class="cover-topline">
     <span>DỰ ÁN NGỮ VĂN 12</span>
     <span>MỘT BÀI THƠ · MỘT CÁCH ĐỌC</span>
@@ -41,9 +38,6 @@ mdc: true
 ---
 
 <div class="tt-slide editorial-slide author-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div>
   <header class="slide-head">
     <span class="section-index">01 / BỐI CẢNH</span>
     <span class="running-title">TỪ NGƯỜI LÍNH ĐẾN THI PHẨM</span>
@@ -93,9 +87,6 @@ mdc: true
 ---
 
 <div class="tt-slide editorial-slide landscape-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div>
   <header class="slide-head">
     <span class="section-index">02 / KHÔNG GIAN NGHỆ THUẬT</span>
     <span class="running-title">MIỀN TÂY · HAI SẮC THÁI</span>
@@ -135,9 +126,6 @@ mdc: true
 ---
 
 <div class="tt-slide editorial-slide soldier-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div>
   <header class="slide-head">
     <span class="section-index">03 / HÌNH TƯỢNG TRUNG TÂM</span>
     <span class="running-title">NGƯỜI LÍNH TÂY TIẾN</span>
@@ -185,9 +173,6 @@ mdc: true
 ---
 
 <div class="tt-slide editorial-slide decode-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div>
   <header class="slide-head">
     <span class="section-index">04 / GIẢI MÃ CHI TIẾT THƠ</span>
     <span class="running-title">THỂ XÁC CHỊU ĐỰNG · KHÍ PHÁCH KHÔNG KHUẤT PHỤC</span>
@@ -235,9 +220,6 @@ mdc: true
 ---
 
 <div class="tt-slide editorial-slide message-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div>
   <header class="slide-head">
     <span class="section-index">05 / LIÊN HỆ VÀ SUY NGẪM</span>
     <span class="running-title">TÂY TIẾN · MỘT CÁCH ĐỌC HÔM NAY</span>
@@ -276,8 +258,5 @@ layout: full
 class: poster-page
 ---
 
-<div class="tt-slide poster-slide">
-  <div class="weather-rain" aria-hidden="true"></div>
-  <div class="weather-mist" aria-hidden="true"></div>
-  <div class="weather-lightning" aria-hidden="true"></div><img class="poster-image" src="/tay-tien-poster.png" alt="Poster Dấu chân Tây Tiến qua núi rừng" /></div>
+<div class="tt-slide poster-slide"><img class="poster-image" src="/tay-tien-poster.png" alt="Poster Dấu chân Tây Tiến qua núi rừng" /></div>
 
