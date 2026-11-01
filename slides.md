@@ -81,7 +81,7 @@ mdc: true
       </div>
     </div>
   </div>
-  <footer class="slide-foot"><span>TƯ LIỆU: DỰ ÁN 1 · BÀI VIẾT ĐÃ BIÊN TẬP</span><span>02 / 07</span></footer>
+  <footer class="slide-foot"><span>TƯ LIỆU</span><span>02 / 07</span></footer>
 </div>
 
 ---
@@ -120,7 +120,7 @@ mdc: true
     </article>
   </div>
   <div class="landscape-conclusion">THIÊN NHIÊN KHÔNG CHỈ LÀ THỬ THÁCH — ĐÓ CÒN LÀ MIỀN KÝ ỨC ĐƯỢC NHUỘM BẰNG CHẤT THƠ.</div>
-  <footer class="slide-foot"><span>GỢI Ý ĐỌC: SỰ ĐAN XEN GIỮA HIỆN THỰC VÀ LÃNG MẠN · [3]</span><span>03 / 07</span></footer>
+  <footer class="slide-foot"><span> SỰ ĐAN XEN GIỮA HIỆN THỰC VÀ LÃNG MẠN </span><span>03 / 07</span></footer>
 </div>
 
 ---
@@ -166,7 +166,7 @@ mdc: true
     </div>
   </div>
   <div class="soldier-bottomline"><strong>CHẤT LÃNG MẠN</strong><span>không xóa nhòa</span><strong>HIỆN THỰC</strong><span>mà làm sáng lên</span><strong>KHÍ PHÁCH</strong></div>
-  <footer class="slide-foot"><span>TƯ LIỆU: DỰ ÁN 1 · BÀI VIẾT ĐÃ BIÊN TẬP</span><span>04 / 07</span></footer>
+  <footer class="slide-foot"><span>TƯ LIỆU</span><span>04 / 07</span></footer>
 </div>
 
 ---
@@ -212,7 +212,7 @@ mdc: true
     <span>TINH THẦN KHUẤT PHỤC</span>
   </div>
   <p class="decode-takeaway">Sức nặng của hai câu thơ nằm ở nghệ thuật tương phản: hiện thực không bị che giấu, nhưng cũng không phải tiếng nói cuối cùng về người lính.</p>
-  <footer class="slide-foot"><span>CÁCH ĐỌC ĐỐI CHIẾU VỚI BÀI VIẾT ĐÃ BIÊN TẬP · [2]</span><span>05 / 07</span></footer>
+  <footer class="slide-foot"><span>CÁCH ĐỌC ĐỐI CHIẾU</span><span>05 / 07</span></footer>
 </div>
 
 ---
