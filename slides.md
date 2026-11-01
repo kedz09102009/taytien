@@ -140,7 +140,6 @@ mdc: true
   <div class="soldier-body">
     <div class="soldier-photo-wrap">
       <img src="/tay-tien-main.jpg" class="soldier-photo"/>
-      <div class="photo-label">TƯ LIỆU HÌNH ẢNH NHÓM CUNG CẤP</div>
     </div>
     <div class="soldier-triad">
       <article class="trait">
@@ -177,7 +176,6 @@ mdc: true
     <span class="section-index">04 / GIẢI MÃ CHI TIẾT THƠ</span>
     <span class="running-title">THỂ XÁC CHỊU ĐỰNG · KHÍ PHÁCH KHÔNG KHUẤT PHỤC</span>
   </header>
-  <p class="eyebrow">HAI CÂU THƠ ĐƯỢC NHÓM LỰA CHỌN</p>
   <div class="poem-focus">
     <span class="quote-mark">“</span>
     <div class="poem-lines">
@@ -248,7 +246,6 @@ mdc: true
   </div>
   <blockquote class="reader-voice">
     “Điều khiến em trân trọng người lính Tây Tiến không phải là họ không biết đau đớn, mà là họ vẫn hướng về điều lớn hơn bản thân mình.”
-    <small>GỢI Ý CẢM NHẬN — NHÓM NÊN ĐIỀU CHỈNH THEO SUY NGHĨ THẬT</small>
   </blockquote>
   <footer class="slide-foot"><span>THÔNG ĐIỆP: BIẾT ƠN QUÁ KHỨ · SỐNG CÓ ÍCH TRONG HIỆN TẠI</span><span>06 / 07</span></footer>
 </div>
